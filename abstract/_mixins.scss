@@ -1,0 +1,36 @@
+@mixin container {
+        max-width: 1440px;
+        padding: 0 2rem;
+        margin: 0 auto;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mobile {
+    @media screen and (max-width: 748px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 821px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media screen and (min-width: 1209px) {
+        @content;
+    }
+}
+
+@mixin desktop-large {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}

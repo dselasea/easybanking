@@ -1,0 +1,56 @@
+.nav {
+    padding: 2.3rem 0;
+    .container {
+        @include container;
+        @include flex;
+        
+        .nav__links {
+            @include flex;
+            // padding: 2.3rem 0;
+            list-style: none;
+            font-size: 1.6rem;
+            
+            li {
+                margin: 0;
+                padding: 0;
+                
+                a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    color: $grayish-blue;
+                    opacity: .7;
+                    transition: all .2s;
+                    position: relative;
+                    
+                    &:hover {
+                        opacity: 1;
+                    }
+                    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(to right,$lime-green, $bright-cyan);
+                        top: 5.9rem;
+                        left: 0;
+                        opacity: 0;
+                    }
+                    
+                    &:hover::before {
+                        content: "";
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            li:not(:last-child){
+                padding-right: 2.3rem;
+            }
+        }
+        
+        .hamburger {
+            display: none;
+        }
+    }
+}

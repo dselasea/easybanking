@@ -1,0 +1,28 @@
+.choose {
+        background: $light-grayish-blue;
+        padding-bottom: $five-rem;
+    .container {
+    @include container;
+        .choose__content {
+            text-align: center;
+            padding-top: 3.5rem;
+            h2 {
+                padding-bottom: 1.5rem; 
+                font-size: 3rem;
+                font-weight: $font-weight-400;
+                color: $dark-blue;
+                
+                span {
+                    display: block;
+                }
+            }
+            
+            p {
+                padding-bottom: 3rem;
+                font-size: 1.5rem;
+                color: $grayish-blue;
+            }
+            
+        }
+    }
+}

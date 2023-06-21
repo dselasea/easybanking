@@ -1,0 +1,77 @@
+.latest {
+    background: $white;
+    padding-bottom: $five-rem;
+    background: $very-light-gray;
+    
+.container {
+@include container;
+    .latest__content {
+        text-align: center;
+        padding-top: 3.5rem;
+        
+        h2 {
+            font-size: 2.7rem;
+            font-weight: $font-weight-400;
+            color: $dark-blue;
+        }
+        
+        h3 {
+            padding-bottom: 1rem; 
+            font-size: 2.7rem;
+            font-weight: $font-weight-300;
+            padding-left: $one-rem;
+            padding-right: $one-rem;
+        }
+        
+        h4 {
+            margin-top: 1rem; 
+            font-size: 1.3rem;
+            font-weight: $font-weight-400;
+            color: $grayish-blue;
+            opacity: .85;
+            padding-left: $one-rem;
+            padding-right: $one-rem;
+            margin-top: 2rem;
+        }
+        
+        p {
+            padding-bottom: 3rem;
+            font-size: 1.5rem;
+            color: $grayish-blue;
+            padding-left: $one-rem;
+            padding-right: $one-rem;
+        }
+        
+        &--img {
+            &-1 {
+                height: 20rem;
+                background: url(/images/image-currency.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            &-2 {
+                height: 20rem;
+                background: url(/images/image-restaurant.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            &-3 {
+                height: 20rem;
+                background: url(/images/image-plane.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            &-4 {
+                height: 20rem;
+                background: url(/images/image-confetti.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        
+    }
+}
+}
